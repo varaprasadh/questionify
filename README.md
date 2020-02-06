@@ -1,6 +1,14 @@
-# unnamed-questioning-app
-
-### open source idea
-    * in this app *,
-     - it generates set of questions on which category selected,
-     - and user can answer these quesions to improve his knonwlege.
+# questionify v1.0 
+ - an open source quizz app, 
+ - where users can select category and difficulty level,
+ - take test of 10 questions,
+ - after completion, gets their results of test.
+   <hr/>
+   <center><b><i>note: webapp under development</i></b></center>
+   <hr/>
+ # questionify v2.0 (unpublished)
+ - gets rewards for each correct submission,
+ - ***Features***
+     - ability to attempt questions more than 10 no.s,
+     - ability to re-attemp same quesion by using reward       points or by seeing an ad.(if wrongly attempted).
+              

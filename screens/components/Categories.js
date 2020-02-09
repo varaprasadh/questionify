@@ -18,7 +18,7 @@ export class Categories extends Component {
                      this.props.items.map((item,i)=>{
                          return (
                              <TouchableOpacity key={i} onPress={()=>this.props.onSetCategory(item)}>
-                                <Item >{item}</Item>
+                                <Item >{item.name}</Item>
                              </TouchableOpacity>
                              )
                      }) 

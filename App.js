@@ -4,17 +4,16 @@ import Home from './screens/Home';
 import { Label } from './screens/components/Global_Components';
 import {createAppContainer,createStackNavigator,createDrawerNavigator} from 'react-navigation';
 import TestBoard from './screens/TestBoard';
-import { URL, URLSearchParams } from 'whatwg-url';
-import { Buffer } from 'buffer';
-
-global.Buffer = Buffer;
-global.URL = URL;
-global.URLSearchParams = URLSearchParams;
+import Drawer from './screens/components/Drawer';
 
 const drawer=createDrawerNavigator({
   Home:Home
 },{
- 
+  initialRouteName:"Home",
+  contentComponent:Drawer,
+  drawerOpenRoute:"DrawerOpen",
+  drawerCloseRoute:"DrawerClose",
+  drawerToggleRoute:"DrawerToggle"
 });
 const root = createStackNavigator(
             {

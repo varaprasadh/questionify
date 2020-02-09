@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="173" height="168" viewBox="0 0 173 168">
+  <defs>
+    <filter id="Ellipse_3" x="4" y="0" width="169" height="168" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_4" x="20" y="18" width="137" height="131" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.611" r="0.679" gradientTransform="translate(-0.006 0.005) rotate(-0.582)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ce0ba7"/>
+      <stop offset="0.455" stop-color="#feda77"/>
+      <stop offset="1" stop-color="#0fc7d4"/>
+    </radialGradient>
+    <filter id="Polygon_1" x="35" y="23" width="107" height="99" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_5" x="0" y="39" width="39" height="38" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_6" x="118" y="121" width="39" height="38" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_7" x="128" y="19" width="39" height="38" filterUnits="userSpaceOnUse">
+      <feOffset dx="10" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-6"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_25" data-name="Group 25" transform="translate(1168 -16)">
+    <g transform="matrix(1, 0, 0, 1, -1168, 16)" filter="url(#Ellipse_3)">
+      <g id="Ellipse_3-2" data-name="Ellipse 3" transform="translate(4 5)" fill="none" stroke="#d442b7" stroke-width="5">
+        <circle cx="75" cy="75" r="75" stroke="none"/>
+        <circle cx="75" cy="75" r="72.5" fill="none"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -1168, 16)" filter="url(#Ellipse_4)">
+      <g id="Ellipse_4-2" data-name="Ellipse 4" transform="translate(20 23)" fill="none" stroke="#21ca8c" stroke-width="5">
+        <ellipse cx="59" cy="56.5" rx="59" ry="56.5" stroke="none"/>
+        <ellipse cx="59" cy="56.5" rx="56.5" ry="54" fill="none"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -1168, 16)" filter="url(#Polygon_1)">
+      <path id="Polygon_1-2" data-name="Polygon 1" d="M44,0,88,81H0Z" transform="translate(35 28)" fill="url(#radial-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -1168, 16)" filter="url(#Ellipse_5)">
+      <circle id="Ellipse_5-2" data-name="Ellipse 5" cx="10" cy="10" r="10" transform="translate(0 44)" fill="#4096c7"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -1168, 16)" filter="url(#Ellipse_6)">
+      <circle id="Ellipse_6-2" data-name="Ellipse 6" cx="10" cy="10" r="10" transform="translate(118 126)" fill="#f6cd29"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -1168, 16)" filter="url(#Ellipse_7)">
+      <circle id="Ellipse_7-2" data-name="Ellipse 7" cx="10" cy="10" r="10" transform="translate(128 24)" fill="#66db34"/>
+    </g>
+  </g>
+</svg>

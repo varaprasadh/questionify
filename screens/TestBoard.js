@@ -286,7 +286,7 @@ class Question_card extends Component{
                     <Options>
                         { 
                             options.map((opt,i)=>{
-                                let isCorrect=item.attempted && item.correct_answer===item.answerGiven && opt===item.answerGiven;
+                                let isCorrect=item.attempted && ((item.correct_answer===item.answerGiven && opt===item.answerGiven) || (this.props.reviewMode && opt==item.correct_answer));
                                 let isWrong=item.attempted && opt===item.answerGiven;
                                 return(
                                     <Option key={i}

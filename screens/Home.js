@@ -134,15 +134,15 @@ UNSAFE_componentWillMount(){
                </View>
             ):(<InfoLabel color="#e74c3c">please choose a difficulty level!</InfoLabel>)
            }
+            <View style={{alignItems:"center",padding:10}}>
+                <Button_G 
+                    onPress={this.startTest.bind(this)}
+                    disabled={!isValidState} background={isValidState?"#2ecc71":"#7f8c8d"}>
+                    <InfoLabel color="white">START TEST</InfoLabel>
+                </Button_G>
+            </View>
          </View>
          
-         <View style={{alignItems:"center",paddingBottom:10}}>
-             <Button_G 
-                onPress={this.startTest.bind(this)}
-                disabled={!isValidState} background={isValidState?"#2ecc71":"#7f8c8d"}>
-                 <InfoLabel color="white">START TEST</InfoLabel>
-             </Button_G>
-         </View>
       </Container>)
     );
   }

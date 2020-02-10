@@ -26,12 +26,11 @@ export class TestBoard extends Component {
         // this.timer=this.timer.bind(this);
     }
     UNSAFE_componentWillMount() {
-      let {navigation}=this.props;
-     let data=navigation.getParam('data',{results:[]});
-    //  fetch(parsedURL).then(res=>res.json()).then(console.log);
-     this.setState({
-         data:data.results.map(obj=>({...obj,attempted:false,unAnswered:false,answerGiven:"",options:this.shuffle([obj.correct_answer,...obj.incorrect_answers])}))
-     });
+        let {navigation}=this.props;
+        let data=navigation.getParam('data',{results:[]});
+        this.setState({
+            data:data.results.map(obj=>({...obj,attempted:false,unAnswered:false,answerGiven:"",options:this.shuffle([obj.correct_answer,...obj.incorrect_answers])}))
+        });
     } 
     shuffle(array) {
         for (let i = array.length - 1; i > 0; i--) {
@@ -99,10 +98,11 @@ export class TestBoard extends Component {
             this.scr_view.scrollTo({x:dWidth*questionNo});
             this.counter = setInterval(this.timer.bind(this), 1000);
         }
-        },2000);
+        },1500);
     } 
     componentWillUnmount(){
         clearTimeout(this.processNextStep);
+        clearInterval(this.counter);
     }
     showReview(){
         this.setState({

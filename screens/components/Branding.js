@@ -12,10 +12,10 @@ export class Branding extends Component {
                         <Label>Questionify</Label>
                     </Row>
                 </Row>
-                <InfoLabel color="#bdc3c7">version 1.0</InfoLabel>
+                {!this.props.noVersion && <InfoLabel color="#bdc3c7">version 1.0</InfoLabel>}
             </View>
         )
     }
-}
+} 
 
 export default Branding

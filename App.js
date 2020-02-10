@@ -5,6 +5,7 @@ import { Label } from './screens/components/Global_Components';
 import {createAppContainer,createStackNavigator,createDrawerNavigator} from 'react-navigation';
 import TestBoard from './screens/TestBoard';
 import Drawer from './screens/components/Drawer';
+import ErrorView from './screens/components/ErrorView';
 
 const drawer=createDrawerNavigator({
   Home:Home
@@ -18,7 +19,8 @@ const drawer=createDrawerNavigator({
 const root = createStackNavigator(
             {
               Home: drawer,
-              TestBoard:TestBoard
+              TestBoard:TestBoard,
+              Error:ErrorView
             }, {
               initialRouteName: "Home",
               headerMode:"none"

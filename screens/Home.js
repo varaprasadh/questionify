@@ -55,7 +55,6 @@ UNSAFE_componentWillMount(){
         params.push("difficulty=" + difficulty);
     }
     let parsedURL = "https://opentdb.com/api.php?amount=10&type=multiple&" + params.join("&");
-    console.log(parsedURL)
      this.setState({
          loading:true
      });
@@ -64,7 +63,11 @@ UNSAFE_componentWillMount(){
              loading:false,
              error:false
          });
-        this.props.navigation.push('TestBoard',{data});
+        if(data.results.length>0){
+            this.props.navigation.push('TestBoard',{data})
+        }else{
+            this.props.navigation.push('Error',{showBackAction:true});
+        }
      }).catch(err=>{
          this.setState({
              loading:false,
@@ -77,8 +80,6 @@ UNSAFE_componentWillMount(){
 
   render() {
       let isValidState=this.state.category!=""&&this.state.difficulty!="";
-      console.log(this.state.category != null,"this ius funny");
-      console.log(this.state.difficulty,this.state.category);
     return (
       this.state.loading?(
           <Loader/>
@@ -112,23 +113,25 @@ UNSAFE_componentWillMount(){
                       <Diffculty_Button background="#e74c3c" >Hard</Diffculty_Button>
                   </TouchableOpacity>
             </View> 
-         </View>
+         </View> 
          <View style={{padding:10}}>
              {
             this.state.category!=null?(
-                <Row style={{padding:30,backgroundColor:"red"}}>
+               
+               <View>
                     <InfoLabel>selected category : </InfoLabel>
                     <InfoLabel color="#27ae60">{this.state.category.name}</InfoLabel>
-               </Row>
+               </View>
+
             ):
             (<InfoLabel color="#e74c3c">please choose a category!</InfoLabel>)
            }
-           {
+           { 
             this.state.difficulty!==""?(
-                <Row>
+                <View style={{flexDirection:"row"}}>
                     <InfoLabel >selected difficulty : </InfoLabel>
                     <InfoLabel color="#27ae60">{this.state.difficulty}</InfoLabel>
-               </Row>
+               </View>
             ):(<InfoLabel color="#e74c3c">please choose a difficulty level!</InfoLabel>)
            }
          </View>

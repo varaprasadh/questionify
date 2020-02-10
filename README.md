@@ -6,6 +6,7 @@
    <hr/>
    <center><b><i>note: webapp under development</i></b></center>
    <hr/>
+ [download the app](https://github.com/varaprasadh/questionify/releases/download/1.0/questionify-beta.apk)
  # questionify v2.0 (unpublished)
  - gets rewards for each correct submission,
  - ***Features***

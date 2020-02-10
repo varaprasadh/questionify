@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "questionify",
-    "slug": "questionify_",
+    "slug": "questionify",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
@@ -20,6 +20,10 @@
     "androidStatusBar": {
       "barStyle": "dark-content",
       "backgroundColor": "#0A48A5"
+    },
+     "android": {
+      "package": "com.consious_coder.quesionify",
+      "versionCode": 1
     },
     "updates": {
       "fallbackToCacheTimeout": 0
